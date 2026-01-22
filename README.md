@@ -1,63 +1,63 @@
-# Abandoned-Task-Controlling
-A tracking solution to meet CR target
+# Operational Abandonment Reduction & CR Recovery System
 
 ## Business Context
-This project simulates a workforce planning and decision-support system designed for a large-scale operational environment with fluctuating demand and strict service level requirements.
+CR (Completion Rate) is a critical operational metric, defined as output over input, with a required target of above 99%.
+
+However, CR performance is highly sensitive to task abandonment. Even a small number of abandoned tasks can significantly degrade CR, making traditional performance monitoring insufficient to address the root problem.
 
 ---
 
 ## Problem Statement
-Operations leaders need to balance service level targets, labor cost, and workforce availability while dealing with demand uncertainty, productivity variation, and hiring constraints.
+The operation faced persistent CR underperformance driven primarily by task abandonment.
+
+Key challenges included:
+- Limited visibility into when and why tasks were abandoned
+- Difficulty distinguishing objective constraints (e.g. capacity, latency spikes) from controllable operational issues
+- Lack of a structured daily monitoring mechanism to track recovery progress
+
+The core objective was not only to improve CR, but to systematically drive abandoned tasks toward near-zero levels.
 
 ---
 
-## Constraints & Assumptions
-- Limited hiring speed  
-- Productivity varies by experience level  
-- Fixed shift structures and labor rules  
-- Cost sensitivity during peak periods  
+## Analytical & Monitoring Approach
+The solution focused on three layers:
 
-> All numbers and logic are abstracted to respect confidentiality.
+1. **Trend Identification**
+   - Daily and hourly abandonment patterns
+   - Comparison against historical min/max ranges
 
----
+2. **Root Cause Classification**
+   - Objective causes (capacity, latency constraints)
+   - Subjective or controllable causes (process gaps, execution issues)
 
-## Approach (High-level)
-- Volume forecasting and demand normalization  
-- Capacity modeling using productivity and shrinkage assumptions  
-- Headcount and cost projection  
-- Scenario-based simulation for decision support  
+3. **Continuous Improvement Monitoring**
+   - Daily abandonment tracking
+   - Queue-level CR and latency performance
+   - Progress visibility toward abandonment reduction targets
+
+> Due to confidentiality obligations, data and internal logic are abstracted and presented at a conceptual level.
 
 ---
 
 ## Key Decisions Supported
-- How many people to hire and when  
-- Shift mix and staffing distribution  
-- Cost vs SLA trade-offs  
-- Risk identification during peak periods  
+- Identification of high-risk hours and queues contributing disproportionately to abandonment
+- Prioritization of operational fixes based on root cause type
+- Evaluation of daily improvement effectiveness toward CR recovery
 
 ---
 
 ## Outcome & Impact
-The model enables leadership to evaluate multiple operational scenarios quickly and make informed decisions that balance service performance and cost efficiency.
+The dashboard enabled operations leaders to shift from reactive metric tracking to proactive abandonment prevention.
 
----
-
-## What I Would Improve in a Real Deployment
-- Integrate real-time performance feedback  
-- Add probabilistic risk modeling  
-- Enhance visualization for non-technical stakeholders  
-
+By focusing on abandonment reduction rather than CR alone, the operation established a clearer, more controllable path toward sustainable CR performance.
+![CR Abandonment Dashboard](images/dashboard_overview.jpg)
 ---
 
 ## Core Skills Demonstrated
-- Workforce Planning  
-- Capacity & Cost Modeling  
-- Scenario Analysis  
-- Decision Support  
+- Operations Performance Analysis
+- Root Cause & Trend Analysis
+- Decision-Oriented Dashboard Design
+- Stakeholder Support for Operational Recovery
 
 ---
 
-## Relevant Roles
-- Business Operations Analyst  
-- Workforce Strategy  
-- Operations Planning
