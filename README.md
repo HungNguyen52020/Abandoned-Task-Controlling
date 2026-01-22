@@ -50,6 +50,7 @@ The solution focused on three layers:
 The dashboard enabled operations leaders to shift from reactive metric tracking to proactive abandonment prevention.
 
 By focusing on abandonment reduction rather than CR alone, the operation established a clearer, more controllable path toward sustainable CR performance.
+
 ![CR Abandonment Dashboard](images/dashboard_overview.jpg)
 ---
 
